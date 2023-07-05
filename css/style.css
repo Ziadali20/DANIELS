@@ -1,0 +1,284 @@
+body {
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+    font-weight: 400;
+}
+section{
+    padding: 100px 0;
+}
+.my-list{
+    position: relative;
+}
+.bg-gray{
+    background-color: #F7F7F7;
+}
+nav .active , #works .active{
+    border-bottom: 2px solid #000;
+}
+/* Start home section */
+
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0,.7),rgba(0, 0, 0,.7)),url(../images/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home .home-content h1{
+    font-size: 60px;
+    font-weight: 200;
+}
+#home .home-content h1::after{
+    content: '';
+    animation: typing 4s infinite linear;
+}
+@keyframes typing {
+    0%{content: "D|";}
+    5%{content: "De|";}
+    10%{content: "Dev|";}
+    15%{content: "Devl|";}
+    17%{content: "Devlo|";}
+    20%{content: "Devlop|";}
+    23%{content: "Devlope|";}
+    27%{content: "Devloper|";}
+    30%{content: "Devlope|";}
+    33%{content: "Devlop|";}
+    37%{content: "Devlo|";}
+    40%{content: "Devl|";}
+    43%{content: "Dev|";}
+    47%{content: "De|";}
+    50%{content: "D|";}
+    53%{content: "De|";}
+    56%{content: "Des|";}
+    60%{content: "Desi|";}
+    63%{content: "Desig|";}
+    66%{content: "Design|";}
+    70%{content: "Designe|";}
+    73%{content: "Designer|";}
+    77%{content: "Designe|";}
+    80%{content: "Design|";}
+    83%{content: "Desig|";}
+    86%{content: "Desi|";}
+    90%{content: "Des|";}
+    95%{content: "De|";}
+    100%{content: "D|";}
+}
+#home .home-content h5{
+font-size: 50px;
+font-weight: 800;
+margin-bottom: 10px;
+}
+.social-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+/* End home section */
+
+/* Start about section */
+.about-content p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+.about-content span{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.progress-description
+{
+   font-size: 13px;
+}
+
+#about .cv a {
+    color: #fff;
+}
+#about .cv:hover {
+    background-color: #fff;
+    
+    transition: all 0.5s;
+}
+#about .cv:hover a{
+    color: #000;
+}
+.contact-me{
+    background-color: #fff;
+}
+#about .contact-me a {
+    color: #000;
+}
+#about .contact-me:hover {
+    background-color: #000;
+    
+    transition: all 0.5s;
+}
+#about .contact-me:hover a{
+    color: #fff;
+
+}
+/* End about section */
+
+/* Start services section */
+.section-head h3
+{
+    font-weight: 900;
+    font-size: 40px;
+    z-index: 2;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+.section-head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.item-icon{
+    font-size: 30px;
+    margin: 20px auto;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover .item-icon{
+    color: #fff;
+    background-color: #000;
+}
+/* End services section */
+
+/* Start portfolio section */
+.img-overlay{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+
+
+.img-overlay h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.overlay-icons .icon{
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.overlay-icons .icon:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.portfolio-item:hover .img-overlay{
+    opacity: 1;
+
+}
+/* End portfolio section */
+/* Start clients section */
+.my_insideSlider img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.my_insideSlider p{
+    font-size: 15px;
+    color: #748182;
+}
+.my_insideSlider span{
+    font-size: 12px;
+    color: #888888;
+    font-weight: 600;
+}
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #748182;
+}
+
+/* End clients section */
+
+/* Start team section */
+.member-caption{
+    background-color: rgba(52, 52, 52,.8);
+}
+.member .overlay-icons .icon{
+    
+    transform: rotateY(180deg);
+}
+.member-overlay{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.member:hover .member-overlay{
+    opacity: 1;
+    transform: rotateY(180deg);
+
+}
+.member-img :hover .member-img img{
+    transform: scale(1.5);
+}
+/* End team section */
+
+/* Start contact section */
+.mybtn:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* End contact section */
+ 
+/* Start stat section */
+.stat-icon{
+    font-size: 30px;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End stat section */
